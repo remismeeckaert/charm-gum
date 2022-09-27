@@ -9,11 +9,17 @@ Une fois l'image docker buildée et lancée, vous pouvez executer les scripts en
 ## Docker
 
 ### Build Image
+```bash
 docker build --tag charm-gum .
+```
 ### Run container
+```bash
 docker run -d --name charm charm-gum
+```
 ### Jump into container
+```bash
 docker exec -it charm /bin/bash
+```
 
 ### Scripts
 
@@ -29,11 +35,14 @@ docker exec -it charm /bin/bash
 
 
 ### Stop le container
+```bash
 docker container stop charm
+```
 ## Prune
+```bash
 docker container prune
 docker image prune
-
+```
 # lien du blog
 
 [remismeeckaert.blogspot.com](https://remismeeckaert.blogspot.com/2022/09/un-peu-de-glamour-dans-vos-scripts-shell.html)
